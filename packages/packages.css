@@ -1,0 +1,128 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+main {
+    margin: 3rem 0;
+    padding: 3rem 0;
+}
+
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-image: url(../images/plans-background.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.package {
+    width: 80%;
+    margin: 1rem 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
+    position: relative;
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.package__subtitle {
+    color: #979797;
+}
+
+.package__info {
+    padding: 1rem;
+    border: 1px solid #0e4f1f;
+    font-size: 1.25rem;
+    color: #0e4f1f;
+    background-color: whitesmoke;
+}
+
+#plus {
+    background-color: rgba(213, 255, 220, 0.95);
+    overflow: hidden;
+
+}
+
+.package__badge {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 12rem;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: #ff5454;
+    -webkit-transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    -ms-transform: rotate(45deg) translateX(3.5rem) translateY(-1rem);
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+}
+
+#free {
+    background-color: rgba(234, 252, 237, 0.95);
+    float: right;
+    text-align: right;
+    border-left: 4px solid #0e4f1f;
+    border-right: none;
+}
+
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
+}
+
+.clearFix {
+    clear: both;
+}
+
+#premium {
+    background-color: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package-title {
+    color: white;
+}
+
+#premium .package__subtitle {
+    color: #bbb;
+}
+
+.package:hover,
+.package:hover {
+    border-color: #ff5454;
+}
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .package {
+        border-left: 4px solid #0e4f1f;
+    }
+
+    #free {
+        border-right: 4px solid #0e4f1f;
+    }
+
+    #free:hover,
+    #free:active {
+        border-right-color: #ff5454;
+    }
+}
